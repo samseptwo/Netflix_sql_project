@@ -132,7 +132,8 @@ with contents as(
 			)
 	select gener,count(show_id) as total_count 
 	from contents 
-	group by gener```
+	group by gener
+```
 
 **Objective:** Count the number of content items in each genre.
 
@@ -219,7 +220,7 @@ with categorize as(
 	select category,count(show_id)
 	from categorize
 	group by category
-	```
+```
 
 **Objective:** Categorize content as 'Bad' if it contains 'kill' or 'violence' and 'Good' otherwise. Count the number of items in each category.
 
